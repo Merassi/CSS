@@ -3,19 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Intro</title>
+    <title>CSS Internal</title>
+    <style>
+        /*Hay que seleccionar el elemento en primer lugar*/
+        /* Por lo cual necesitamos estudiar los selectores básicos, que son tres.*/
+
+        /* Selector por el nombre del elemento, es decir, por el nombre de la etiqueta(tag). */
+
+        h1 {
+            width: 70%;
+            height: 150px;
+            border: 5px solid violet;
+            background-color: aqua;
+            color: coral;
+            text-align: center; 
+        }
+
+    /* Seleccionar por el atributo id del elemento */
+        #comparacion {
+            padding: 40px;
+            text-align: right;
+        }
+
+        /* seleccionar por el atributo de clase(class) del elemento, que permite seleccionar varios elementos que sean de la misma clase. */
+        .info {
+            color: blueviolet;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="width: 500px;
-            height: 200px;
-            border-width: 10px 30px; 
-            border-style: dashed; 
-            border-color: red;
-            padding: 20px;">
+    <h1 id="head1">
         Introducción a las hojas de estilo en Cascada(CSS) (Cascading Style Sheet)
     </h1>
-    <h1>
+    <h1 id="comparacion">
         Otro elemento HTML para comparar
     </h1>
+
+    <h2>
+        Selector de CSS por el atributo class
+    </h2>
+    <p id="parrafo1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit voluptas harum vitae, velit voluptates placeat non consectetur, minus pariatur consequuntur eos quae libero! Illo eligendi mollitia corrupti, ea reiciendis cupiditate.
+    </p>
+
+    <p id="parrafo2">
+        Culpa doloremque dicta atque alias nulla at tempore reprehenderit fugiat, nostrum deserunt qui magni officiis nihil corrupti aut fuga officia ex quod quidem. Deleniti, vel mollitia hic dolorem quia vitae!
+    </p>
+    <p class="info" id="info01">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio molestiae labore voluptatem officiis hic, commodi a ipsum esse culpa atque in earum sunt, perspiciatis, quidem tempore. Eum atque quisquam nulla!
+    </p>
+    <p class="info" id="info02">
+        Enim ad maiores unde perspiciatis aperiam suscipit velit? Magnam eum dolore, iure itaque nemo expedita eos iste porro harum aspernatur. Facilis vitae ullam nihil, error culpa doloremque facere reiciendis ipsa.
+    </p>
 </body>
 </html>
